@@ -64,6 +64,7 @@ div img {
 
 .container p {
   color: var(--graylish-blue);
+  text-align: center;
 }
 
 /* ;;10 */
