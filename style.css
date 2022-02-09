@@ -82,7 +82,7 @@ div img {
 }
 
 
-/* ;;12 */
+/* ;;13 */
 .attribution {
   font-size: 14px;
 }
@@ -91,4 +91,65 @@ div img {
 /* nth-child(n) mengarahkan ke tag a yang ke n */
 .attribution a:nth-child(2) {
   color: white;
+}
+
+/* Bagian tombol toggle */
+/* ;;14 */
+.wadah-bulat {
+  position: relative;
+  background: #fff;
+  /* display:blok */
+  width: 120px;
+  height: 60px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1) ,
+  inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 
+  4px rgba(0, 0, 0, 0.1);
+  /* ;;16 */
+  cursor: pointer;
+}
+
+/* ;;18 */
+.wadah-bulat.active {
+  background: rgb(66, 66, 66);
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1) ,
+  inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 
+  4px rgba(0, 0, 0, 05);
+}
+
+/* ;;15 */
+.wadah-bulat .bulat {
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.1) ,
+      inset 0 4px 4px rgba(255 ,255, 255, 1), inset 0 -4px 
+      4px rgba(255 ,255, 255, 1);
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: linear-gradient(to bottom, #eaeaea,
+  #f9f9f9);
+  transition: 0.5s;
+}
+
+/* ;;17 */
+.wadah-bulat.active .bulat {
+  left: 60px;
+  /* ;;19 */
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: inset 0 8px 40px rgba(0, 0, 0, 0.5) ,
+  inset 0 4px 4px rgba(0, 0, 0, 0.1), inset 0 -4px 
+  4px rgba(0, 0, 0, 0.1);
+}
+
+/* ;;20 */
+body.active {
+    --White: #252525;
+    --light-gray: #121212;
+    --graylish-blue: hsl(220, 15%, 55%);
+    --dark-blue:hsl(0, 0%, 100%);
 }
